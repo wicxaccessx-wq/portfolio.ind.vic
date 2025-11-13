@@ -42,15 +42,15 @@ const ContactSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 cyber-glow-text text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 cyber-glow-text text-center">
             Get In Touch
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 cyber-glow"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 sm:mb-16 cyber-glow"></div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
             {/* Contact Form */}
-            <div className="bg-card border border-border rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+            <div className="bg-card border border-border rounded-lg p-6 sm:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -105,17 +105,17 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="bg-card border border-border rounded-lg p-8">
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 cyber-glow">
-                  <Mail className="w-6 h-6 text-primary" />
+            <div className="space-y-6 sm:space-y-8">
+              <div className="bg-card border border-border rounded-lg p-6 sm:p-8">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 cyber-glow">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Email</h3>
-                <p className="text-muted-foreground">vigneswaran.es@gmail.com</p>
+                <h3 className="text-lg sm:text-xl font-bold mb-2">Email</h3>
+                <p className="text-sm sm:text-base text-muted-foreground">vigneswaran.es.com</p>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-8">
-                <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
+              <div className="bg-card border border-border rounded-lg p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold mb-4">Connect With Me</h3>
                 <div className="space-y-4">
                   <a
                     href="https://github.com"
@@ -144,7 +144,7 @@ const ContactSection = () => {
 
               <div className="bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 rounded-lg p-6 text-center">
                 <p className="text-sm text-foreground/80">
-                  Looking for opportunities in web development and cybersecurity internship
+                  Looking for opportunities in web development and cybersecurity
                 </p>
               </div>
             </div>

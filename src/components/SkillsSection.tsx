@@ -44,20 +44,20 @@ const SkillsSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 cyber-glow-text text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 cyber-glow-text text-center">
             Skills & Expertise
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 cyber-glow"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 sm:mb-16 cyber-glow"></div>
 
           {/* Full Stack Development */}
-          <div className="mb-16">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center cyber-glow">
-                <Code className="w-6 h-6 text-primary" />
+          <div className="mb-12 sm:mb-16">
+            <div className="flex items-center gap-3 mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-lg flex items-center justify-center cyber-glow">
+                <Code className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-3xl font-bold">Full Stack Development</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold">Full Stack Development</h3>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {fullStackSkills.map((skill) => (
                 <SkillCard key={skill.name} {...skill} />
               ))}
@@ -66,13 +66,13 @@ const SkillsSection = () => {
 
           {/* Cybersecurity */}
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center cyber-glow-secondary">
-                <Shield className="w-6 h-6 text-secondary" />
+            <div className="flex items-center gap-3 mb-6 sm:mb-8">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-secondary/20 rounded-lg flex items-center justify-center cyber-glow-secondary">
+                <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-secondary" />
               </div>
-              <h3 className="text-3xl font-bold">Cybersecurity</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold">Cybersecurity</h3>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {cyberSecuritySkills.map((skill) => (
                 <SkillCard key={skill.name} {...skill} />
               ))}

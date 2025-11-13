@@ -25,14 +25,15 @@ const HeroSection = () => {
             <span className="text-sm text-muted-foreground font-mono">In the world of 0s and 1s — I’m the glitch that exposes the threat.</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 cyber-glow-text leading-tight">
-              Cyber Forensics &<br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 cyber-glow-text leading-tight">
+            Cyber Forensics &<br />
             <span className="text-secondary">Vulnerability Analyst</span>
           </h1>
 
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-             💀   hunting exploits, breaking barriers, and fortifying systems with precision, chaos, and unrelenting digital dominance.</p>
-            
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
+           💀 hunting exploits, breaking barriers, and fortifying systems with precision, chaos, and unrelenting digital dominance.
+          </p>
+
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <Button
               size="lg"
@@ -54,11 +55,11 @@ const HeroSection = () => {
           </div>
 
           {/* Tech stack icons */}
-          <div className="flex flex-wrap gap-6 justify-center items-center text-muted-foreground">
+          <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-6 justify-center items-center text-muted-foreground px-4">
             {["Python", "Metasploit", "Nmap", "Wireshark", "Kali Linux", "Burp Suite"].map((tech) => (
               <div
                 key={tech}
-                className="px-4 py-2 bg-card border border-border rounded-lg hover:border-primary hover:text-primary transition-glow cursor-default"
+                className="px-3 py-2 sm:px-4 text-sm sm:text-base bg-card border border-border rounded-lg hover:border-primary hover:text-primary transition-glow cursor-default"
               >
                 {tech}
               </div>

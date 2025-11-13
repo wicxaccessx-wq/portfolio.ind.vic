@@ -30,7 +30,7 @@ const CertificatesSection = () => {
       title: "OWASP Top 10 (2025)",
       issuer: "Udemy",
       status: "Completed",
-      description: " Learn vulnerabilities, real-world breaches, prevention strategies, and secure coding",
+      description: "Learn vulnerabilities, real-world breaches, prevention strategies, and secure coding",
       year: "2025",
       inProgress: false,
     },
@@ -40,12 +40,12 @@ const CertificatesSection = () => {
     <section id="certificates" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 cyber-glow-text text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 cyber-glow-text text-center">
             Certificates & Achievements
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-16 cyber-glow"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mb-12 sm:mb-16 cyber-glow"></div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {certificates.map((cert, index) => (
               <div
                 key={index}
@@ -89,9 +89,9 @@ const CertificatesSection = () => {
           </div>
 
           {/* Additional achievements section */}
-          <div className="mt-12 bg-card border border-border rounded-lg p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Continuous Learning</h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+          <div className="mt-8 sm:mt-12 bg-card border border-border rounded-lg p-6 sm:p-8 text-center">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Continuous Learning</h3>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
               Committed to staying updated with the latest in web development and cybersecurity.
               Currently pursuing advanced certifications and participating in CTF challenges.
             </p>
