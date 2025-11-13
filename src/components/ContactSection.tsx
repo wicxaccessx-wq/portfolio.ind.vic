@@ -111,7 +111,7 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-2">Email</h3>
-                <p className="text-sm sm:text-base text-muted-foreground">vigneswaran.es.com</p>
+                <p className="text-sm sm:text-base text-muted-foreground">vigneswaran.es@gmail.com</p>
               </div>
 
               <div className="bg-card border border-border rounded-lg p-6 sm:p-8">
@@ -144,7 +144,7 @@ const ContactSection = () => {
 
               <div className="bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 rounded-lg p-6 text-center">
                 <p className="text-sm text-foreground/80">
-                  Looking for opportunities in web development and cybersecurity
+                  Looking for opportunities in web development and cybersecurity internship
                 </p>
               </div>
             </div>

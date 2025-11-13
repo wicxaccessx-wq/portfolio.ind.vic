@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="text-center">
           <p className="text-muted-foreground">
             © {currentYear}{" "}
-            <span className="text-primary font-semibold">Vigneswaran's folio</span>
+            <span className="text-primary font-semibold">Vigneswaran's portfolio</span>
             {" "}| Built with passion for security and development
           </p>
           <div className="mt-4 flex items-center justify-center gap-2">
