@@ -31,7 +31,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <h1 className="text-xl sm:text-2xl font-bold cyber-glow-text">
-            {"<"}Vigneswaran's folio{"/>"}
+            {"<"}Vigneswaran's portfolio{"/>"}
           </h1>
           <div className="hidden md:flex gap-6">
             {["home", "about", "skills", "certificates", "contact"].map((item) => (
