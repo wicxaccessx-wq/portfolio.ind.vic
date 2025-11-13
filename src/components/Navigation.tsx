@@ -25,7 +25,9 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md border-b border-primary/20 cyber-glow" : "bg-black"
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md border-b border-primary/20 cyber-glow"
+          : "bg-black"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -33,6 +35,8 @@ const Navigation = () => {
           <h1 className="text-xl sm:text-2xl font-bold cyber-glow-text">
             {"<"}Vigneswaran's portfolio{"/>"}
           </h1>
+
+          {/* Desktop Menu */}
           <div className="hidden md:flex gap-6">
             {["home", "about", "skills", "certificates", "contact"].map((item) => (
               <button
@@ -45,6 +49,7 @@ const Navigation = () => {
               </button>
             ))}
           </div>
+
           <div className="hidden sm:block">
             <Button
               variant="outline"
@@ -55,6 +60,8 @@ const Navigation = () => {
               Get in Touch
             </Button>
           </div>
+
+          {/* Mobile Toggle */}
           <button
             className="md:hidden text-primary hover:text-primary/80 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -63,17 +70,16 @@ const Navigation = () => {
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-        
+
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-primary/20 animate-fade-in">
-            <div className="flex flex-col gap-4 mt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-primary/20 animate-fade-in  bg-black/90 backdrop-blur-lg rounded-lg shadow-lg">
+            <div className="flex flex-col gap-4 mt-4 px-4">
               {["home", "about", "skills", "certificates", "contact"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-left text-foreground hover:text-primary transition-glow capitalize py-2"
-                >
+                  className="text-left text-foreground hover:text-primary transition-glow capitalize py-2">
                   {item}
                 </button>
               ))}
